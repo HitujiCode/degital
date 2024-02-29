@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.text1 {
+  font-size: rem(18);
+  font-weight: $bold;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}

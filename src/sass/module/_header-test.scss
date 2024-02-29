@@ -1,0 +1,124 @@
+@use "global" as *;
+
+.header-test {
+  padding: rem(12) 0;
+  border-bottom: 1px solid $lightgray2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: $bg;
+}
+
+.header-test__inner {
+}
+
+.inner {
+}
+
+.header-test__container {
+  display: flex;
+  height: rem(47);
+  background-color: $blue2;
+  border-radius: rem(5);
+}
+
+.header-test__head {
+  width: calc(120 / 1000 * 100%);
+  font-size: rem(16);
+  font-weight: $bold;
+  color: $white;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  background-color: $blue;
+  border-radius: rem(5) 0 0 rem(5);
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.header-test__numbers-wrap {
+  flex: 1;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  white-space: nowrap;
+  overflow-x: auto;
+  width: 100%;
+  margin-left: calc(67 / 1000 * 100%);
+  scrollbar-width: none;
+}
+
+.header-test__numbers-wrap::-webkit-scrollbar {
+  display: none;
+}
+
+.header-test__numbers {
+  counter-reset: number;
+  width: 100%;
+  max-width: fit-content;
+  display: flex;
+  gap: rem(8);
+}
+
+.header-test__number {
+  counter-increment: number;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: rem(33);
+  height: rem(30);
+  background-color: $white;
+  border: 1px solid $white;
+  border-radius: rem(5);
+  color: $blue;
+  flex-shrink: 0;
+}
+
+.header-test__number::before {
+  content: counter(number);
+  font-size: rem(20);
+  font-weight: $bold;
+  font-family: $second-font-family;
+  line-height: 1;
+}
+
+.header-test__number.is-active {
+  background-color: $blue;
+  color: $white;
+}
+
+.header-test__timer {
+  width: rem(67);
+  padding: 0 rem(10);
+  display: flex;
+  align-items: center;
+}
+
+.header-test__button {
+  width: calc(120 / 1000 * 100%);
+  background-color: $blue;
+  border-radius: 0 rem(5) rem(5) 0;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: rem(10) rem(11);
+  flex-shrink: 0;
+}
+
+.button-action--close {
+}
+
+.header-test--fifteen {
+  @extend .header-test;
+}
+
+.header-test--fifteen .header-test__numbers {
+  justify-content: center;
+}

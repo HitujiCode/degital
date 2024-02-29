@@ -1,0 +1,70 @@
+@use "global" as *;
+
+.header {
+  background-color: $blue;
+  border-radius: rem(5);
+  position: fixed;
+  top: rem(12);
+  left: rem(12);
+  right: rem(12);
+  padding: rem(11) rem(10) rem(12);
+}
+
+.header__inner {
+  position: relative;
+  text-align: center;
+}
+
+.header__wrap {
+  position: absolute;
+  top: rem(-2);
+  left: 0;
+}
+
+.header__name {
+  font-size: rem(16);
+  font-weight: $bold;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  position: relative;
+  background-color: $white;
+  border-radius: rem(5);
+  border: 1px solid $lightgray;
+  padding: rem(6) rem(6.5) rem(5) rem(32);
+  display: inline-flex;
+  align-items: center;
+}
+
+.header__name::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  left: rem(6);
+  width: rem(20);
+  height: rem(20);
+  background-image: url("../images/icon-user.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.header__title {
+  font-size: rem(24);
+  font-weight: $bold;
+  color: $white;
+  line-height: 1;
+}
+
+.header--test {
+  @extend .header;
+  padding: rem(9) rem(10) rem(8);
+}
+
+.header--test .header__inner {
+  text-align: left;
+}
+
+.header--test .header__wrap {
+  position: initial;
+  display: inline-block;
+}

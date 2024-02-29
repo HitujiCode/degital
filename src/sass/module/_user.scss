@@ -1,0 +1,100 @@
+@use "global" as *;
+
+.user {
+}
+
+.user__inner.inner {
+}
+
+.user__head {
+  display: flex;
+  gap: rem(24);
+}
+
+.user__class {
+  width: calc(109 / 1000 * 100%);
+}
+
+.user__subject {
+  width: calc(149 / 1000 * 100%);
+}
+
+.user__class,
+.user__subject {
+  background-color: $white;
+  border: 1px solid $lightgray;
+  border-radius: rem(5);
+  position: relative;
+}
+
+.user__class::after,
+.user__subject::after {
+  content: "";
+  position: absolute;
+  top: 52%;
+  transform: translateY(-50%);
+  right: rem(12);
+  width: rem(16);
+  height: rem(10);
+  background-color: $black;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+.user__class select,
+.user__subject select {
+  width: 100%;
+  font-size: rem(18);
+  font-weight: $bold;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  padding: rem(16) rem(32) rem(14) rem(12);
+}
+
+.user__guide {
+  flex: 1;
+  display: flex;
+  gap: rem(38);
+  background-color: $lightblue;
+  border: 1px solid $lightblue2;
+  padding: rem(6) rem(13) rem(5) rem(18);
+  height: fit-content;
+}
+
+.user__guide-text {
+  padding-right: rem(30);
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.user__guide-text::before,
+.user__guide-text::after {
+  content: "";
+  position: absolute;
+  width: rem(7);
+  height: rem(12);
+  background-color: $blue;
+  clip-path: polygon(0 0, 0 100%, 100% 50%);
+}
+
+.user__guide-text::before {
+  right: rem(11);
+}
+
+.user__guide-text::after {
+  right: 0;
+}
+
+.user__guide-buttons {
+  display: flex;
+  gap: rem(19);
+  flex: 1;
+}
+
+.user__guide-button {
+  flex: 1;
+}
+
+.user__table {
+  margin-top: rem(16);
+}

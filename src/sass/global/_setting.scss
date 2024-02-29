@@ -1,0 +1,54 @@
+@use "sass:math";
+
+// インナー幅設定
+// コンテンツのインナー幅（最も共通の幅が多い部分）
+$inner: 1000px;
+// ※キュンパス幅ではなくインナーの幅を指す
+
+// 余白
+$padding-pc: 12px;
+$padding-sp: 12px;
+
+////////////////////
+// フォント設定
+////////////////////
+
+$base-font-family: "BIZ UDPGothic", sans-serif;
+$second-font-family: "Roboto", sans-serif;
+// ※検証ツールでしっかり反映されているか確認する
+
+// フォントウェイト
+$regular: 300;
+$normal: 400;
+$medium: 500;
+$bold: 700;
+
+////////////////////
+// 色の指定
+////////////////////
+
+//色指定（共通性のあるものは出来る限り指定すると良い）
+$black: #444444;
+$white: #fff;
+$bg: #fffded;
+$lightgray: #bcbcbc;
+$lightgray2: #c7c7c7;
+$skyblue: #68a7f2;
+$skyblue2: #a3cfff;
+$blue: #397ed0;
+$blue2: #5d99e2;
+$blue3: #5e99de;
+$lightblue: #d9ebff;
+$lightblue2: #b2c9e5;
+$disabled: #adbac9;
+$disabled-border: #b9c9db;
+$mintgreen: #1cffe5;
+$darkblue: #1359ad;
+$active: #b2d6ff;
+$active2: #84acdb;
+
+body {
+  font-family: $base-font-family;
+  color: $black;
+  background-color: $bg;
+}

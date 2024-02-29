@@ -1,0 +1,47 @@
+@use "global" as *;
+
+.button-action {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  padding: rem(6) rem(19) rem(6) rem(27);
+  font-size: rem(16);
+  font-weight: $bold;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  border: 1px solid $lightblue;
+  border-radius: rem(5);
+  background-color: $white;
+  position: relative;
+}
+
+.button-action::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  left: rem(10);
+  width: rem(8);
+  height: rem(14);
+  background-image: url("../images/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.button-action--close {
+  @extend .button-action;
+  padding: rem(6) rem(13) rem(6) rem(32);
+}
+
+.button-action--close::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  left: rem(13);
+  width: rem(13);
+  height: rem(13);
+  background-image: url("../images/icon-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}

@@ -1,0 +1,80 @@
+@use "global" as *;
+
+.user-table {
+  border-collapse: collapse;
+  width: 100%;
+  counter-reset: rowNumber;
+}
+
+.user-table th,
+.user-table td {
+  border: 1px solid $lightblue2;
+  font-size: rem(16);
+  line-height: 1;
+  text-align: center;
+  background-color: $white;
+}
+
+.user-table tr:not(:first-child) {
+  counter-increment: rowNumber;
+}
+
+.user-table tr:not(:first-child) td:nth-child(2) {
+  text-align: left;
+}
+
+.user-table tr:not(:first-child) td:nth-child(3) {
+  padding-right: rem(14);
+}
+
+.user-table tr td:first-child::before {
+  content: counter(rowNumber);
+}
+
+.user-table tr:first-child th {
+  background-color: $lightblue;
+  font-weight: $bold;
+  letter-spacing: 0.05em;
+  padding: rem(12) 0 rem(10);
+}
+
+.user-table th:nth-child(1) {
+  width: calc(70 / 1000 * 100%);
+}
+
+.user-table th:nth-child(2) {
+  width: calc(285 / 1000 * 100%);
+}
+
+.user-table th:nth-child(3) {
+  width: calc(145 / 1000 * 100%);
+}
+
+.user-table th:nth-child(4),
+.user-table th:nth-child(5),
+.user-table th:nth-child(6),
+.user-table th:nth-child(7) {
+  width: calc(125 / 1000 * 100%);
+}
+
+.user-table td {
+  font-size: rem(14);
+  font-weight: $bold;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  padding: rem(10) rem(7) rem(9) rem(8);
+}
+
+.user-table td:nth-child(1) {
+  font-size: rem(18);
+  font-weight: $medium;
+  font-family: $second-font-family;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+
+.user-table td:nth-child(2) {
+  padding-left: rem(16);
+  padding-right: rem(22);
+  line-height: calc(17 / 14);
+}

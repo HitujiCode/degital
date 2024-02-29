@@ -1,0 +1,62 @@
+@use "global" as *;
+
+.login {
+}
+
+.login__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login__head {
+}
+
+.login__icon {
+  width: rem(135);
+  margin-inline: auto;
+}
+
+.login__icon img {
+  aspect-ratio: 135/52;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.login__title {
+  margin-top: rem(14);
+  font-size: rem(32);
+  font-weight: $bold;
+  line-height: 1;
+}
+
+.login__form {
+  margin-top: rem(40);
+}
+
+.login__wrap:not(:first-child) {
+  margin-top: rem(32);
+}
+
+.login__wrap label {
+  display: block;
+  font-size: rem(18);
+  font-weight: $bold;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+
+.login__wrap input {
+  width: rem(348);
+  padding: rem(17);
+  margin-top: rem(8);
+  border: 1px solid $lightgray;
+  border-radius: rem(5);
+  background-color: $white;
+}
+
+.login__button {
+  margin-top: rem(46);
+}
+

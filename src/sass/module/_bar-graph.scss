@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.bar-graph {
+  border: 1px solid $lightblue2;
+  width: 100%;
+  height: rem(30);
+  background-image: linear-gradient(to right, $skyblue2 53%, $lightblue 53% 93%, $white 93%);
+}
+
+.bar-graph2 {
+  @extend .bar-graph;
+  background-image: linear-gradient(to right, $skyblue2 79%, $lightblue2 79%, $lightblue 79% 93%);
+  height: rem(48);
+}
+
+.bar-graph3 {
+  @extend .bar-graph;
+  width: calc(86 / 180 * 100%);
+  background-image: linear-gradient(to right, $skyblue2 59%, $lightblue2 59%, $lightblue 59%);
+  height: rem(48);
+}

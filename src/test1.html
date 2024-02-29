@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="robots" content="noindex" />
+  <!-- meta情報 -->
+  <title>デジタル教材システム</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="" />
+  <!-- GoogleFonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script defer src="./js/script.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__wrap">
+        <button class="header__name">文理 花子文字数文字数文字数</button>
+      </div>
+      <div class="header__title">テスト管理</div>
+    </div>
+  </header>
+  <main class="layout-main">
+    <section class="user">
+      <div class="user__inner inner">
+        <div class="user__head">
+          <div class="user__class">
+            <select>
+              <option hidden>学年</option>
+              <option value="">1年</option>
+              <option value="">2年</option>
+            </select>
+          </div>
+          <div class="user__subject">
+            <select>
+              <option hidden>教科</option>
+              <option value="">算数</option>
+              <option value="">理科</option>
+            </select>
+          </div>
+          <div class="user__guide">
+            <p class="user__guide-text text1">テストの解き方について</p>
+            <div class="user__guide-buttons">
+              <div class="user__guide-button">
+                <a class="button--small" href="">動画を見る</a>
+              </div>
+              <div class="user__guide-button">
+                <a class="button--small" href="">操作してみる</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="user__table">
+          <table class="user-table">
+            <tbody>
+              <tr>
+                <th>回数</th>
+                <th>単元</th>
+                <th>得点</th>
+                <th>テスト</th>
+                <th>解きなおす</th>
+                <th>パワーアップ</th>
+                <th>テスト結果</th>
+              </tr>
+              <tr>
+                <td></td>
+                <td>整数と小数</td>
+                <td>
+                  <div class="bar-graph"></div>
+                </td>
+                <td><a class="button--small" href="#">テストを実施</a></td>
+                <td><a class="button--small" href="#">解きなおす</a></td>
+                <td><a class="button--small" href="#">パワーアップ</a></td>
+                <td><a class="button--small" href="#">結果を見る</a></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>体積</td>
+                <td>
+                  <div class="bar-graph"></div>
+                </td>
+                <td><a class="button--small" href="#">テストを実施</a></td>
+                <td><a class="button--small" href="#">解きなおす</a></td>
+                <td><a class="button--small" href="#">パワーアップ</a></td>
+                <td><a class="button--small" href="#">結果を見る</a></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>単元名が長い場合は二行になります単元名が長い場合は二行になります</td>
+                <td>
+                  <div class="bar-graph"></div>
+                </td>
+                <td><a class="button--small is-disabled" href="#">テストを実施</a></td>
+                <td><a class="button--small" href="#">解きなおす</a></td>
+                <td><a class="button--small" href="#">パワーアップ</a></td>
+                <td><a class="button--small" href="#">結果を見る</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__icon">
+        <img src="./images/icon.png" alt="" role="presentation" width="95" height="36" />
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

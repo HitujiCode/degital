@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.timer {
+  margin-left: auto;
+  width: rem(41);
+  height: rem(43);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: rem(16);
+  font-weight: $bold;
+  color: $white;
+  line-height: 1;
+  background-image: radial-gradient($skyblue 50%, transparent 55.5%),
+    conic-gradient($mintgreen 0% 75%, $darkblue 75% 100%);
+  border-radius: 50%;
+}
+
+.timer__small {
+  font-size: rem(10);
+}

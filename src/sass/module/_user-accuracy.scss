@@ -1,0 +1,87 @@
+@use "global" as *;
+
+.user-accuracy {
+  border-collapse: collapse;
+  width: auto;
+  white-space: nowrap;
+}
+
+.user-accuracy th,
+.user-accuracy td {
+  border: 1px solid $lightblue2;
+  font-size: rem(16);
+  line-height: 1;
+  text-align: center;
+  height: rem(32);
+  // padding: rem(5) 0 rem(6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-accuracy td:first-child {
+  letter-spacing: 0.05em;
+}
+
+.user-accuracy tr:first-child th,
+.user-accuracy td:first-child {
+  background-color: $lightblue;
+  font-weight: $bold;
+}
+
+.user-accuracy tr {
+  display: flex;
+}
+
+.user-accuracy tr:not(:first-child) {
+  margin-top: -1px;
+}
+
+.user-accuracy th:first-child,
+.user-accuracy td:first-child {
+  width: 70px;
+}
+
+.user-accuracy th:not(:first-child),
+.user-accuracy td:not(:first-child) {
+  width: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -1px;
+}
+
+.user-accuracy th:not(:first-child) {
+  font-size: rem(18);
+  font-weight: $medium;
+  font-family: $second-font-family;
+  line-height: 1;
+}
+
+.user-accuracy td:not(:first-child) {
+  font-size: rem(15);
+  font-weight: $medium;
+  font-family: $second-font-family;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  padding: 0;
+}
+
+.user-accuracy tr:first-child th:nth-child(n + 2):nth-child(-n + 11) {
+  background-color: $skyblue2;
+}
+
+.user-accuracy--fifteen,
+.user-accuracy--powerup {
+  @extend .user-accuracy;
+}
+
+.user-accuracy--fifteen th:first-child,
+.user-accuracy--fifteen td:first-child {
+  width: 70px;
+}
+
+.user-accuracy--fifteen th:not(:first-child),
+.user-accuracy--fifteen td:not(:first-child) {
+  width: 59.8px;
+}

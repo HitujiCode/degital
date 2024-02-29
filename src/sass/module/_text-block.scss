@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.text-block {
+  border: 1px solid $lightblue2;
+  min-height: rem(165);
+  padding: rem(40) rem(16) rem(16);
+  position: relative;
+  text-align: justify;
+}
+
+.text-block__label {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $lightblue;
+  padding: rem(7) rem(15);
+  font-size: rem(16);
+  font-weight: $bold;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+
+.text-block--large {
+  @extend .text-block;
+  min-height: rem(245);
+}

@@ -1,0 +1,82 @@
+@use "global" as *;
+
+.user-score {
+  border-collapse: collapse;
+}
+
+.user-score th,
+.user-score td {
+  border: 1px solid $lightblue2;
+  font-size: rem(16);
+  line-height: 1;
+  text-align: center;
+}
+
+.user-score__head {
+  letter-spacing: 0.15em;
+}
+
+.user-score__head--delta {
+  letter-spacing: 0.05em;
+}
+
+.user-score td:first-child {
+  letter-spacing: 0.05em;
+}
+
+.user-score tr:first-child th,
+.user-score td:first-child {
+  background-color: $lightblue;
+  font-weight: $bold;
+  padding: rem(9) 0 rem(8);
+}
+
+.user-score th:first-child {
+  width: calc(120 / 751 * 100%);
+}
+
+.user-score th:nth-child(2),
+.user-score th:nth-child(3),
+.user-score th:nth-child(4) {
+  width: calc(210 / 751 * 100%);
+}
+
+.user-score .user-score__large {
+  font-size: rem(44);
+  font-weight: $medium;
+  font-family: $second-font-family;
+  line-height: 1;
+  padding: rem(5) 0 rem(6);
+  position: relative;
+}
+
+.user-score__large::after {
+  content: "点";
+  position: absolute;
+  bottom: rem(11);
+  right: rem(22);
+  font-size: rem(16);
+  font-weight: $bold;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+
+.user-score .user-score__normal {
+  font-size: rem(18);
+  font-weight: $medium;
+  font-family: $second-font-family;
+  line-height: 1;
+  padding: rem(11) 0 rem(10);
+  position: relative;
+}
+
+.user-score__normal::after {
+  content: attr(data-score);
+  position: absolute;
+  bottom: rem(7);
+  right: rem(12);
+  font-size: rem(14);
+  font-weight: $regular;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}

@@ -1,0 +1,54 @@
+@use "global" as *;
+
+.accracy-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: inherit;
+  // padding: rem(5) 0 rem(4);
+  font-size: rem(16);
+  font-weight: $bold;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+
+.accracy-button img {
+  aspect-ratio: 1/1;
+  width: rem(22);
+  height: rem(22);
+  object-fit: contain;
+}
+
+.accracy-button.is-active {
+  background-color: rgba($active, 0.3);
+  border: 2px solid $active2;
+}
+
+.accracy-button--cross {
+  @extend .accracy-button;
+}
+
+.accracy-button--cross img {
+  width: rem(18);
+  height: rem(18);
+}
+
+.accracy-button--num {
+  @extend .accracy-button;
+  align-items: baseline;
+  padding-top: rem(6);
+  color: $blue3;
+}
+
+.accracy-button--num.is-active {
+  padding-top: rem(4);
+}
+
+.accracy-button__num {
+  font-size: rem(20);
+}
+
+.accracy-button__suffix {
+  font-size: rem(12);
+}

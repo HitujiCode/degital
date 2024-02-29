@@ -1,0 +1,18 @@
+@use "global" as *;
+
+.test-area {
+  background-color: $white;
+  height: 100%;
+  position: relative;
+}
+
+.test-area__head {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: rem(30);
+  font-weight: $bold;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}

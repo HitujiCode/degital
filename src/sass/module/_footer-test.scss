@@ -1,0 +1,43 @@
+@use "global" as *;
+
+.footer-test {
+  border-top: 1px solid $lightgray2;
+  background-color: $white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: rem(40);
+  z-index: 900;
+}
+
+.footer-test__inner.inner {
+  height: inherit;
+}
+
+.footer-test__body {
+  display: flex;
+  height: inherit;
+  align-items: center;
+}
+
+.footer-test__title {
+  font-size: rem(16);
+  font-weight: $bold;
+  line-height: 1;
+  letter-spacing: 0.1em;
+}
+
+.footer-test__wrap {
+  margin-left: auto;
+  display: flex;
+  gap: rem(10);
+}
+
+.footer-test__class,
+.footer-test__name {
+  font-size: rem(16);
+  font-weight: $bold;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
