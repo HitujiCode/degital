@@ -8,10 +8,19 @@
 .user-answer th,
 .user-answer td {
   border: 1px solid $lightblue2;
-  font-size: rem(16);
   line-height: 1;
   letter-spacing: 0.05em;
   text-align: center;
+}
+
+.user-answer th {
+  font-size: rem(16);
+}
+
+.user-answer td {
+  font-size: rem(14);
+  font-weight: $regular;
+  padding: rem(5) rem(14) rem(4);
 }
 
 .user-answer tr:first-child th {
@@ -24,11 +33,6 @@
 .user-answer td:first-child {
   width: calc(260 / 472 * 100%);
   text-align: left;
-}
-
-.user-answer td {
-  font-weight: $regular;
-  padding: rem(4) rem(14) rem(3);
 }
 
 .user-answer th:nth-child(2) {
