@@ -1,10 +1,10 @@
 @use "global" as *;
 
 .button-action {
-  display: inline-flex;
-  align-items: center;
+  display: flex;
+  justify-content: center;
   width: 100%;
-  padding: rem(6) rem(19) rem(6) rem(27);
+  padding: rem(6) 0;
   font-size: rem(16);
   font-weight: $bold;
   line-height: 1;
@@ -12,10 +12,17 @@
   border: 1px solid $lightblue;
   border-radius: rem(5);
   background-color: $white;
-  position: relative;
 }
 
-.button-action::before {
+.button-action span {
+  position: relative;
+  padding-left: rem(27);
+  padding-right: rem(19);
+  display: flex;
+  align-items: center;
+}
+
+.button-action span::before {
   content: "";
   position: absolute;
   display: inline-block;
@@ -30,10 +37,18 @@
 
 .button-action--close {
   @extend .button-action;
-  padding: rem(6) rem(13) rem(6) rem(32);
+  padding: rem(6) 0;
 }
 
-.button-action--close::before {
+.button-action--close span {
+  position: relative;
+  padding-left: rem(32);
+  padding-right: rem(13);
+  display: flex;
+  align-items: center;
+}
+
+.button-action--close span::before {
   content: "";
   position: absolute;
   display: inline-block;
