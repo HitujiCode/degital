@@ -71,6 +71,11 @@
   background-color: $skyblue2;
 }
 
+.user-accracy__button.is-active {
+  border: 2px solid $active2;
+  background-color: rgba($active, 0.3);
+}
+
 .user-accuracy--fifteen,
 .user-accuracy--powerup {
   @extend .user-accuracy;

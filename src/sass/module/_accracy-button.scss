@@ -1,10 +1,5 @@
 @use "global" as *;
 
-.user-accracy__button.is-active {
-  border: 2px solid $active2;
-  background-color: rgba($active, 0.3);
-}
-
 .accracy-button {
   display: flex;
   align-items: center;
