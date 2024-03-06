@@ -15,3 +15,9 @@
 .unit__tab {
   height: inherit;
 }
+
+.unit--delta {
+  @extend .unit;
+  max-height: calc(100vh - 130px);
+  padding-bottom: rem(10);
+}

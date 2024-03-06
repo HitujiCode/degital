@@ -1,0 +1,165 @@
+@use "global" as *;
+
+.user-score6 {
+  border-collapse: separate;
+  border-spacing: 0 1px;
+  width: auto;
+  white-space: nowrap;
+  max-height: inherit;
+  overflow-y: clip;
+}
+
+.user-score6 thead {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 30;
+}
+
+.user-score6 tbody {
+  overflow-y: auto;
+}
+
+.user-score6 tfoot {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+}
+
+.user-score6 tr:not(:first-child) {
+  margin-top: 1px;
+}
+
+.user-score6 tr {
+  display: flex;
+}
+
+.user-score6 th,
+.user-score6 td {
+  border: 1px solid $lightblue2;
+  font-size: rem(18);
+  font-weight: $medium;
+  font-family: $second-font-family;
+  line-height: 1;
+  height: rem(31);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-score6 th:not(:first-child),
+.user-score6 td:not(:first-child) {
+  margin-left: -1px;
+}
+
+.user-score6 th {
+  background-color: $lightblue4;
+}
+
+.user-score6 td {
+  background-color: $white;
+}
+
+.user-score6 th.user-score6__title {
+  background-color: $lightblue;
+}
+
+.user-score6 th.user-score6__title,
+.user-score6 td.user-score6__title {
+  font-size: rem(14);
+  font-weight: $bold;
+  font-family: $base-font-family;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+
+.user-score6 td.user-score6__title {
+  justify-content: start;
+  padding: 0 rem(9);
+}
+
+.user-score6 td.user-score6__title--name {
+  @extend .user-score6__title;
+  color: $blue;
+}
+
+.user-score6__title--name a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.user-score6 td.user-score6__title--small {
+  @extend .user-score6__title;
+  font-size: rem(12);
+  color: $blue;
+  justify-content: start;
+  padding: 0 rem(9);
+  white-space: initial;
+}
+
+.user-score6 th,
+.user-score6 td,
+.user-score6 tfoot td:nth-child(2) {
+  width: rem(32);
+}
+
+.user-score6 th:nth-child(1),
+.user-score6 td:nth-child(1) {
+  width: rem(45);
+  position: sticky;
+  left: 0;
+}
+
+.user-score6 th:nth-child(2),
+.user-score6 td:nth-child(2) {
+  width: rem(152);
+  position: sticky;
+  left: rem(44);
+}
+
+.user-score6 tr:first-child th:nth-child(n + 3):nth-child(-n + 12) {
+  background-color: $skyblue2;
+}
+
+.user-accracy__button.is-active {
+  border: 2px solid $active2;
+  background-color: rgba($active, 0.3);
+}
+
+.user-score6 th.user-score6__total,
+.user-score6 td.user-score6__total {
+  width: rem(104);
+  font-size: rem(14);
+  font-weight: $bold;
+  font-family: $base-font-family;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.user-score6 th.user-score6__total {
+  background-color: $lightblue;
+}
+
+.user-score6 tfoot td {
+  width: rem(32);
+  font-size: rem(12);
+}
+
+.user-score6 tfoot th:nth-child(1) {
+  width: rem(196);
+  justify-content: start;
+  padding: rem(2) rem(10) 0;
+  z-index: 1;
+}
+
+.user-score6 td.is-active {
+  background-color: $blue;
+  color: $white;
+}
+
+.user-score6 tr.is-disabled td {
+  background-color: $disabled4;
+  color: $disabled3;
+}

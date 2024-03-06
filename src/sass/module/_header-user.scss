@@ -24,6 +24,12 @@
   gap: rem(12);
 }
 
+.header__wrap--right {
+  @extend .header__wrap;
+  left: initial;
+  right: 0;
+}
+
 .header__name {
   font-size: rem(16);
   font-weight: $bold;

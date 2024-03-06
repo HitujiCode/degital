@@ -121,3 +121,20 @@
 .button-action--w span::before {
   background-image: url("../images/icon-w-arrow.svg");
 }
+
+.button-action--prev,
+.button-action--next {
+  @extend .button-action;
+  width: rem(120);
+}
+
+.button-action--next span {
+  padding-left: rem(19);
+  padding-right: rem(27);
+}
+
+.button-action--next span::before {
+  background-image: url("../images/icon-arrow-next.svg");
+  left: initial;
+  right: rem(10);
+}

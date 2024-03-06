@@ -64,12 +64,20 @@
 .tab__wrap3 {
   margin-top: rem(13);
   overflow-x: auto;
-  border-left: 1px solid $lightblue2;
+  border-right: 1px solid $lightblue2;
   scrollbar-width: none;
 }
 
-.tab__wrap3::-webkit-scrollbar {
+.tab__wrap3::-webkit-scrollbar,
+.tab__wrap4::-webkit-scrollbar {
   display: none;
+}
+
+.tab__wrap4 {
+  margin-top: rem(13);
+  overflow-x: auto;
+  scrollbar-width: none;
+  height: 100%;
 }
 
 .tab__data-table {
@@ -216,5 +224,7 @@
 
 .tab--history .tab__content {
   height: 100%;
-  padding-bottom: rem(12);
+  padding-bottom: rem(21);
+  display: flex;
+  flex-direction: column;
 }
