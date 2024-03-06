@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="robots" content="noindex" />
+  <!-- meta情報 -->
+  <title>デジタル教材システム</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="" />
+  <!-- GoogleFonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script defer src="./js/script.js"></script>
+</head>
+
+<body class="layout-teacher">
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__wrap">
+        <button class="header__name">文理 太郎先生</button>
+      </div>
+      <div class="header__title">テスト履歴</div>
+    </div>
+  </header>
+  <main class="layout-main--teacher">
+    <div class="admin">
+      <div class="admin__inner inner">
+        <div class="admin__wrapper">
+          <div class="admin__sideber">
+            <aside class="sideber">
+              <dl class="sideber__nav">
+                <div class="sideber__wrap">
+                  <dt class="sideber__head">
+                    <div class="sideber__head-icon">
+                      <img src="./images/icon-test.svg" alt="" width="16" height="18" />
+                    </div>
+                    <p class="sideber__head-text">テスト管理</p>
+                  </dt>
+                  <dd class="sideber__item">
+                    <a class="button--small" href="">テスト管理</a>
+                  </dd>
+                </div>
+                <div class="sideber__wrap">
+                  <dt class="sideber__head">
+                    <div class="sideber__head-icon">
+                      <img src="./images/icon-history.svg" alt="" width="20" height="17" />
+                    </div>
+                    <p class="sideber__head-text">履歴確認</p>
+                  </dt>
+                  <dd class="sideber__item">
+                    <a class="button--small3 is-active" href="">テスト履歴</a>
+                  </dd>
+                  <dd class="sideber__item">
+                    <a class="button--small3" href="">学習履歴</a>
+                  </dd>
+                </div>
+              </dl>
+            </aside>
+          </div>
+          <div class="admin__container">
+            <div class="admin__tab">
+              <div class="tab--admin">
+                <ul class="tab__menu">
+                  <li class="tab__menu-item">クラス履歴</li>
+                  <li class="tab__menu-item is-active">児童生徒別履歴
+                  </li>
+                </ul>
+                <ul class="tab__container">
+                  <li class="tab__content is-active">
+                    <div class="tab__content-head">
+                      <div class="admin-head">
+                        <div class="admin-head__grade">
+                          <select>
+                            <option hidden>学年</option>
+                            <option value="">1年</option>
+                            <option value="">2年</option>
+                          </select>
+                        </div>
+                        <div class="admin-head__subject">
+                          <select>
+                            <option hidden>教科</option>
+                            <option value="">算数</option>
+                            <option value="">理科</option>
+                          </select>
+                        </div>
+                        <div class="admin-head__class">
+                          <select>
+                            <option hidden>クラス</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                          </select>
+                        </div>
+                        <div class="admin-head__button">
+                          <a class="button--small" href="">表 示</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab__content-body">
+                      <table class="admin-history">
+                        <thead>
+                          <tr>
+                            <th>回数</th>
+                            <th>単元</th>
+                            <th>クラス平均</th>
+                            <th>実施日</th>
+                            <th>結果</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td>
+                              <p class="text3">整数と小数</p>
+                            </td>
+                            <td>
+                              <div class="bar-graph"></div>
+                            </td>
+                            <td><time datetime="2024-01-15">2024/01/15</time></td>
+                            <td><a class="button--small4" href="">生徒選択</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>
+                              <p class="text3">体積</p>
+                            </td>
+                            <td>
+                              <div class="bar-graph"></div>
+                            </td>
+                            <td><time datetime="2024-01-15">2024/01/15</time></td>
+                            <td><a class="button--small4" href="">生徒選択</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>
+                              <p class="text3">単元名が長い場合は二行になります単元名が長い場合は二行になります</p>
+                            </td>
+                            <td>
+                              <div class="bar-graph"></div>
+                            </td>
+                            <td>
+                              <p class="text3">未実施</p>
+                            </td>
+                            <td><a class="button--small4 is-disabled" href="">生徒選択</a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__icon">
+        <img src="./images/icon.svg" alt="" width="95" height="36" />
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

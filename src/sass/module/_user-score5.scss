@@ -1,0 +1,105 @@
+@use "global" as *;
+
+.user-score5 {
+  border-collapse: collapse;
+  width: auto;
+  white-space: nowrap;
+}
+
+.user-score5 th,
+.user-score5 td {
+  border: 1px solid $lightblue2;
+  font-size: rem(16);
+  line-height: 1;
+  text-align: center;
+  height: rem(32);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-score5 th {
+  background-color: $lightblue5;
+}
+
+.user-score5 th:first-child {
+  font-size: rem(16);
+  font-weight: $bold;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  flex: 1;
+}
+
+.user-score5 tr {
+  display: flex;
+}
+
+.user-score5 tr:not(:first-child) {
+  margin-top: -1px;
+}
+
+.user-score5 th:first-child {
+  justify-content: start;
+  padding: 0 rem(9);
+  width: 128px;
+}
+
+.user-score5 tr:nth-child(1) th:first-child {
+  padding: 0 rem(15);
+}
+
+.user-score5 tr:nth-child(2) th:first-child {
+  padding: 0 rem(9);
+}
+
+.user-score5 th:not(:first-child),
+.user-score5 td:not(:first-child) {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -1px;
+}
+
+.user-score5 th:not(:first-child) {
+  font-size: rem(18);
+  font-weight: $medium;
+  font-family: $second-font-family;
+  line-height: 1;
+}
+
+.user-score5 td:not(:first-child) {
+  font-size: rem(15);
+  font-weight: $medium;
+  font-family: $second-font-family;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  padding: 0;
+}
+
+.user-score5 tr:first-child th:nth-child(n + 2):nth-child(-n + 11) {
+  background-color: $skyblue2;
+}
+
+.user-accracy__button.is-active {
+  border: 2px solid $active2;
+  background-color: rgba($active, 0.3);
+}
+
+.user-score5 tr .user-score5__total {
+  width: 104px;
+  font-size: rem(14);
+  font-weight: $bold;
+  font-family: $base-font-family;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.user-score5 tr:nth-child(1) .user-score5__total {
+  background-color: $lightblue;
+}
+
+.user-score5 td.is-active {
+  background-color: $blue;
+  color: $white;
+}

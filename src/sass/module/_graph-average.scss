@@ -1,0 +1,39 @@
+@use "global" as *;
+
+%average {
+  width: 100%;
+  height: rem(20);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.graph-average1 {
+  @extend %average;
+  background-image: linear-gradient(to right, $skyblue2 80%, $white 80%);
+}
+
+.graph-average2 {
+  @extend %average;
+  background-image: linear-gradient(to right, $lightblue4 80%, $white 80%);
+}
+
+.graph-average3 {
+  @extend %average;
+  background-image: linear-gradient(to right, $lightblue2 80%, $white 80%);
+}
+
+.graph-average4 {
+  @extend %average;
+  background-image: linear-gradient(to right, $skyblue2 calc(96 / 104 * 100%), $white calc(96 / 104 * 100%));
+}
+
+.graph-average5 {
+  @extend %average;
+  background-image: linear-gradient(to right, $lightblue4 calc(96 / 104 * 100%), $white calc(96 / 104 * 100%));
+}
+
+.graph-average6 {
+  @extend %average;
+  background-image: linear-gradient(to right, $blue7 calc(96 / 104 * 100%), $white calc(96 / 104 * 100%));
+}

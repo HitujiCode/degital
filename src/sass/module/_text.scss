@@ -1,0 +1,39 @@
+@use "global" as *;
+
+.text1 {
+  font-size: rem(18);
+  font-weight: $bold;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+
+.text2 {
+  @extend .text1;
+  font-size: rem(16);
+}
+
+.text3 {
+  @extend .text1;
+  font-size: rem(14);
+  line-height: calc(17 / 14);
+}
+
+.text4 {
+  @extend .text1;
+  font-size: rem(14);
+  line-height: 1;
+  font-weight: $regular;
+}
+
+.text5 {
+  @extend .text1;
+  font-weight: $medium;
+  letter-spacing: 0;
+  font-family: $second-font-family;
+}
+
+.text6 {
+  @extend .text1;
+  font-size: rem(14);
+  letter-spacing: 0;
+}

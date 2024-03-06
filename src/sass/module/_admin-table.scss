@@ -1,0 +1,97 @@
+@use "global" as *;
+
+.admin-table {
+  border-collapse: collapse;
+  width: 100%;
+  counter-reset: rowNumber;
+  max-height: inherit;
+  display: flex;
+  flex-direction: column;
+  overflow-y: clip;
+}
+
+.admin-table thead {
+  display: flex;
+}
+
+.admin-table thead tr {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.admin-table thead th {
+  background-color: $lightblue;
+  font-weight: $bold;
+  letter-spacing: 0.05em;
+  padding: rem(12) 0 rem(11);
+}
+
+.admin-table tbody {
+  display: flex;
+  flex-direction: column;
+  min-height: fit-content;
+  overflow-y: auto;
+}
+
+.admin-table tbody tr {
+  counter-increment: rowNumber;
+  display: flex;
+  height: rem(56);
+}
+
+.admin-table tbody tr td:first-child::before {
+  content: counter(rowNumber);
+  font-size: rem(18);
+}
+
+.admin-table th,
+.admin-table td {
+  border: 1px solid $lightblue2;
+  font-size: rem(16);
+  font-weight: $bold;
+  line-height: 1;
+  text-align: center;
+  background-color: $white;
+}
+
+.admin-table th:nth-child(1),
+.admin-table td:nth-child(1) {
+  width: calc(70 / 820 * 100%);
+}
+
+.admin-table th:nth-child(2),
+.admin-table td:nth-child(2) {
+  width: calc(461 / 820 * 100%);
+}
+
+.admin-table th:nth-child(3),
+.admin-table td:nth-child(3) {
+  width: calc(145 / 820 * 100%);
+}
+
+.admin-table th:nth-child(4),
+.admin-table td:nth-child(4) {
+  flex: 1;
+}
+
+.admin-table td {
+  padding: 0 rem(17);
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-table td:nth-child(2) {
+  font-size: rem(14);
+  line-height: calc(17 / 14);
+  justify-content: start;
+  text-align: left;
+}
+
+.admin-table tbody time {
+  font-weight: $medium;
+  font-family: $second-font-family;
+  letter-spacing: 0;
+}

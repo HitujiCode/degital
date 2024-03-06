@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.user-score2 {
+  border: 1px solid $lightblue2;
+  width: calc(308 / 952 * 100%);
+}
+
+.user-score2__head {
+  padding: rem(9) rem(15) rem(7);
+  background-color: $lightblue;
+  text-align: center;
+}
+
+.user-score2__body {
+  height: rem(144);
+  padding: rem(5) rem(15);
+  display: flex;
+  align-items: end;
+}

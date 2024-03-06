@@ -12,6 +12,7 @@
   border: 1px solid $lightblue;
   border-radius: rem(5);
   background-color: $white;
+  text-transform: uppercase;
 }
 
 .button-action span {
@@ -59,4 +60,64 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+
+.button-action--extension,
+.button-action--end {
+  @extend .button-action;
+  padding: rem(11) 0;
+  font-size: rem(18);
+  letter-spacing: 0.1em;
+  color: $white;
+  width: rem(160);
+  max-width: 100%;
+}
+
+.button-action--extension {
+  background-color: $skyblue;
+}
+
+.button-action--end {
+  @extend .button-action;
+  background-color: $blue6;
+}
+
+.button-action--extension span,
+.button-action--end span {
+  padding-left: rem(22);
+  padding-right: initial;
+}
+
+.button-action--extension span::before,
+.button-action--end span::before {
+  left: 0;
+  width: rem(19);
+  height: rem(19);
+}
+
+.button-action--extension span::before {
+  background-image: url("../images/icon-clock.svg");
+}
+
+.button-action--end span::before {
+  background-image: url("../images/icon-check.svg");
+}
+
+.button-action--w {
+  @extend .button-action;
+}
+
+.button-action--w span {
+  padding-left: rem(30);
+  padding-right: rem(12);
+}
+
+.button-action--w span::before {
+  left: rem(10);
+  width: rem(14);
+  height: rem(14);
+}
+
+.button-action--w span::before {
+  background-image: url("../images/icon-w-arrow.svg");
 }

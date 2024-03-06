@@ -60,3 +60,10 @@
   margin-top: rem(46);
 }
 
+.login--teacher {
+  @extend .login;
+}
+
+.login--teacher .login__icon {
+  width: rem(126);
+}

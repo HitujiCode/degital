@@ -32,30 +32,44 @@
   <script defer src="./js/script.js"></script>
 </head>
 
-<body>
-  <header class="header--test">
+<body class="layout-teacher">
+  <header class="header">
     <div class="header__inner">
       <div class="header__wrap">
-        <a class="button-action" href="#"><span>もどる</span></a>
+        <button class="header__name">文理 太郎先生</button>
       </div>
+      <div class="header__title">テスト管理</div>
     </div>
   </header>
-  <main class="layout-grid">
-    <section class="test">
-      <div class="test__inner inner">
-        <div class="test__body">
-          <h1 class="test__head">わくわく算数5（啓林館）</h1>
-          <h2 class="test__title">8.整数</h2>
-          <dl class="test__wrap">
-            <dt class="test__class">5年１組</dt>
-            <dd class="test__name">文理 太郎</dd>
-          </dl>
-          <div class="test__button">
-            <a class="button" href="#">テストをはじめる</a>
+  <main>
+    <div class="popup-timer">
+      <div class="popup-timer__inner">
+        <div class="popup-timer__body">
+          <div class="popup-timer__head">
+            <div class="popup-timer__genre">
+              <p class="popup-timer__class">5年１組</p>
+              <p class="popup-timer__subject">算数</p>
+            </div>
+            <button class="popup-timer__close">
+              <img src="./images/icon-close.svg" alt="閉じる" width="24" height="24" />
+            </button>
+          </div>
+          <div class="popup-timer__title">4.小数のかけ算</div>
+          <div class="popup-timer__timer">
+            <p class="popup-timer__text">経過時間</p>
+            <p class="popup-timer__time">30:02</p>
+          </div>
+          <div class="popup-timer__buttons">
+            <div class="popup-timer__button">
+              <a class="button-action--extension" href=""><span>5分延長</span></a>
+            </div>
+            <div class="popup-timer__button">
+              <a class="button-action--end" href=""><span>テスト終了</span></a>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   </main>
   <footer class="footer">
     <div class="footer__inner">

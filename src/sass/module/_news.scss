@@ -1,0 +1,52 @@
+@use "global" as *;
+
+.news {
+  border: 1px solid $lightblue2;
+  padding: rem(15) rem(16) rem(10);
+  background-color: $white;
+}
+
+.news__head {
+  display: flex;
+  align-items: center;
+  gap: rem(5);
+  padding: 0 rem(5) rem(7);
+}
+
+.news__head-icon {
+  width: fit-content;
+}
+
+.news__head-icon img {
+  aspect-ratio: 20/20;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.news__head-title {
+}
+
+.news__body {
+}
+
+.news__list {
+}
+
+.news__item {
+  display: flex;
+  gap: rem(15);
+  padding: rem(5);
+  border-top: 1px dashed $lightblue3;
+}
+
+.news__item:first-child {
+  border-top: 1px solid $lightblue3;
+}
+
+.news__date {
+}
+
+.news__title {
+  text-decoration: underline;
+}

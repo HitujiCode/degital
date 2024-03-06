@@ -1,0 +1,35 @@
+@use "global" as *;
+
+.user-data {
+  border-collapse: collapse;
+  width: 100%;
+  counter-reset: rowNumber;
+}
+
+.user-data th,
+.user-data td {
+  border: 1px solid $lightblue2;
+  font-size: rem(14);
+  line-height: 1;
+  text-align: center;
+  background-color: $white;
+  padding: rem(9) rem(15) rem(7);
+}
+
+.user-data th {
+  background-color: $lightblue;
+  font-weight: $bold;
+  letter-spacing: 0.05em;
+  width: calc(110 / 578 * 100%);
+}
+
+.user-data td {
+  font-weight: $regular;
+  text-align: left;
+  width: calc(180 / 578 * 100%);
+}
+
+.user-data__scores {
+  display: flex;
+  gap: rem(36);
+}

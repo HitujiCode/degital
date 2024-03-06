@@ -25,6 +25,12 @@
   cursor: pointer;
 }
 
+.tab__menu-buttons {
+  display: flex;
+  gap: rem(12);
+  margin-left: auto;
+}
+
 .tab__menu-button {
   margin-left: auto;
 }
@@ -44,9 +50,44 @@
   background-color: $white;
 }
 
+.tab__wrap1 {
+  display: flex;
+  gap: rem(16);
+}
+
+.tab__wrap2 {
+  margin-top: rem(12);
+  display: flex;
+  gap: rem(14);
+}
+
+.tab__wrap3 {
+  margin-top: rem(13);
+  overflow-x: auto;
+  border-left: 1px solid $lightblue2;
+  scrollbar-width: none;
+}
+
+.tab__wrap3::-webkit-scrollbar {
+  display: none;
+}
+
+.tab__data-table {
+  flex: 1;
+}
+
+.tab__user-score {
+  width: calc(358 / 952 * 100%);
+}
+
 .tab__content--delta {
   @extend .tab__content;
   padding: rem(19) rem(22) rem(24);
+}
+
+.tab__content--history1 {
+  @extend .tab__content;
+  padding-bottom: rem(34);
 }
 
 .tab__content.is-active {
@@ -96,6 +137,11 @@
   row-gap: rem(13);
 }
 
+.tab__bottom--delta {
+  @extend .tab__bottom;
+  margin-top: rem(16);
+}
+
 .tab__answer-table {
 }
 
@@ -136,4 +182,39 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.tab--admin {
+  @extend .tab;
+  min-height: inherit;
+  height: 100%;
+}
+
+.tab--admin .tab__container {
+  min-height: inherit;
+}
+
+.tab--admin .tab__content {
+  min-height: inherit;
+  padding: rem(14) rem(16) 0;
+}
+
+.tab__content-body {
+  margin-top: rem(16);
+  max-height: calc(530 / 768 * 100vh);
+}
+
+.tab--history {
+  @extend .tab;
+  height: 100%;
+}
+
+.tab--history .tab__container {
+  max-height: calc(608 / 627 * 100%);
+  height: 100%;
+}
+
+.tab--history .tab__content {
+  height: 100%;
+  padding-bottom: rem(12);
 }

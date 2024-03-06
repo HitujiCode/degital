@@ -6,3 +6,8 @@
   align-items: center;
   min-height: 100vh;
 }
+
+.layout-grid--teacher {
+  @extend .layout-grid;
+  // background-color: $bg-teach;
+}

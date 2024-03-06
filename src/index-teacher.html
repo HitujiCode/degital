@@ -32,38 +32,32 @@
   <script defer src="./js/script.js"></script>
 </head>
 
-<body>
-  <header class="header--test">
-    <div class="header__inner">
-      <div class="header__wrap">
-        <a class="button-action" href="#"><span>もどる</span></a>
-      </div>
-    </div>
-  </header>
+<body class="layout-teacher">
   <main class="layout-grid">
-    <section class="test">
-      <div class="test__inner inner">
-        <div class="test__body">
-          <h1 class="test__head">わくわく算数5（啓林館）</h1>
-          <h2 class="test__title">8.整数</h2>
-          <dl class="test__wrap">
-            <dt class="test__class">5年１組</dt>
-            <dd class="test__name">文理 太郎</dd>
-          </dl>
-          <div class="test__button">
-            <a class="button" href="#">テストをはじめる</a>
+    <section class="login--teacher layout-login">
+      <div class="login__inner inner">
+        <div class="login__head">
+          <div class="login__icon">
+            <img src="./images/icon.svg" alt="" width="135" height="52" />
+          </div>
+          <h1 class="login__title">文理CBT for School 単元テスト</h1>
+        </div>
+        <div class="login__form">
+          <div class="login__wrap">
+            <label for="user-id">ID</label>
+            <input id="user-id" type="text" />
+          </div>
+          <div class="login__wrap">
+            <label for="user-pass">パスワード</label>
+            <input id="user-pass" type="text" />
+          </div>
+          <div class="login__button">
+            <a class="button" href="#">ログイン</a>
           </div>
         </div>
       </div>
     </section>
   </main>
-  <footer class="footer">
-    <div class="footer__inner">
-      <div class="footer__icon">
-        <img src="./images/icon.svg" alt="" width="95" height="36" />
-      </div>
-    </div>
-  </footer>
 </body>
 
 </html>

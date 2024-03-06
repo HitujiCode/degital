@@ -1,0 +1,43 @@
+@use "global" as *;
+
+.admin {
+  min-height: inherit;
+}
+
+.admin__inner.inner {
+  min-height: inherit;
+}
+
+.admin__wrapper {
+  min-height: inherit;
+}
+
+.admin__sideber {
+  width: calc(164 / 1024 * 100%);
+  position: fixed;
+  top: rem(71);
+  bottom: rem(58);
+  left: 12px;
+}
+
+.admin__container {
+  padding-left: calc(180 / 1000 * 100%);
+  max-height: calc(655 / 768 * 100vh);
+  min-height: inherit;
+}
+
+.admin__news {
+}
+
+.admin__head {
+  margin-top: rem(16);
+}
+
+.admin__content {
+  margin-top: rem(16);
+  max-height: calc(434 / 768 * 100vh);
+}
+
+.admin__tab {
+  min-height: calc(100vh - 174px);
+}

@@ -1,0 +1,107 @@
+@use "global" as *;
+
+.popup-timer {
+  position: fixed;
+  z-index: 1200;
+  background-color: rgba($black2, 0.7);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.popup-timer__inner {
+  display: grid;
+  place-content: center;
+  height: 100%;
+}
+
+.popup-timer__body {
+  width: rem(648);
+  max-width: 100%;
+  background-color: $white;
+  border: 1px solid $gray;
+  border-radius: rem(20);
+  padding: rem(32) rem(32) rem(54);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup-timer__head {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.popup-timer__genre {
+  display: flex;
+  gap: 0.8em;
+}
+
+.popup-timer__class,
+.popup-timer__subject {
+  font-size: rem(18);
+  font-weight: $bold;
+  line-height: 1;
+  letter-spacing: 0.1em;
+}
+
+.popup-timer__close {
+  width: rem(24);
+  padding: 0;
+}
+
+.popup-timer__close img {
+  aspect-ratio: 24/24;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.popup-timer__title {
+  margin-top: rem(17);
+  font-size: rem(24);
+  font-weight: $bold;
+  line-height: 1;
+  letter-spacing: 0.1em;
+}
+
+.popup-timer__timer {
+  margin-top: rem(32);
+  width: rem(207);
+  height: rem(207);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient($white 53%, transparent 54%), conic-gradient($mintgreen 0% 75%, $darkblue 75% 100%);
+  border-radius: 50%;
+}
+
+.popup-timer__text,
+.popup-timer__time {
+  font-weight: $bold;
+  color: $blue5;
+  line-height: 1;
+}
+
+.popup-timer__text {
+  margin-top: rem(-24);
+  font-size: rem(21);
+}
+
+.popup-timer__time {
+  margin-top: rem(10);
+  font-family: $second-font-family;
+  font-size: rem(50);
+}
+
+.popup-timer__buttons {
+  margin-top: rem(29);
+  display: flex;
+  gap: rem(50);
+}
+
+.popup-timer__button {
+}

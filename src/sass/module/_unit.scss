@@ -1,13 +1,17 @@
 @use "global" as *;
 
 .unit {
+  height: 100%;
+  padding-bottom: rem(24);
 }
 
 .unit__inner {
+  height: inherit;
 }
 
 .inner {
 }
 
 .unit__tab {
+  height: inherit;
 }

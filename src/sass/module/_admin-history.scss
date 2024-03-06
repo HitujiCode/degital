@@ -1,0 +1,115 @@
+@use "global" as *;
+
+.admin-history {
+  border-collapse: collapse;
+  width: 100%;
+  counter-reset: rowNumber;
+  max-height: inherit;
+  display: flex;
+  flex-direction: column;
+  overflow-y: clip;
+}
+
+.admin-history thead {
+  display: flex;
+}
+
+.admin-history thead tr {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.admin-history thead th {
+  background-color: $lightblue;
+  font-weight: $bold;
+  letter-spacing: 0.05em;
+  padding: rem(12) 0 rem(11);
+}
+
+.admin-history tbody {
+  display: flex;
+  flex-direction: column;
+  min-height: fit-content;
+  overflow-y: auto;
+  padding-bottom: rem(14);
+}
+
+.admin-history tbody tr {
+  counter-increment: rowNumber;
+  display: flex;
+  height: rem(56);
+  margin-top: -1px;
+}
+
+.admin-history tbody tr td:first-child::before {
+  content: counter(rowNumber);
+  font-size: rem(18);
+}
+
+.admin-history th,
+.admin-history td {
+  border: 1px solid $lightblue2;
+  font-size: rem(16);
+  font-weight: $bold;
+  line-height: 1;
+  text-align: center;
+  background-color: $white;
+}
+
+.admin-history th:not(:first-child),
+.admin-history td:not(:first-child) {
+  margin-left: -1px;
+}
+
+.admin-history th:nth-child(1),
+.admin-history td:nth-child(1) {
+  width: calc(69 / 782 * 100%);
+}
+
+.admin-history th:nth-child(2),
+.admin-history td:nth-child(2) {
+  flex: 1;
+}
+
+.admin-history th:nth-child(3),
+.admin-history td:nth-child(3) {
+  width: calc(145 / 782 * 100%);
+}
+
+.admin-history td:nth-child(3) {
+  padding: 0 rem(12);
+}
+
+.admin-history th:nth-child(4),
+.admin-history td:nth-child(4) {
+  width: calc(145 / 782 * 100%);
+}
+
+.admin-history th:nth-child(5),
+.admin-history td:nth-child(5) {
+  width: calc(145 / 782 * 100%);
+}
+
+.admin-history td:nth-child(5) {
+  padding: 0 rem(16);
+}
+
+.admin-history td {
+  padding: 0 rem(18);
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-history td:nth-child(2) {
+  justify-content: start;
+  text-align: left;
+}
+
+.admin-history tbody time {
+  font-weight: $medium;
+  font-family: $second-font-family;
+  letter-spacing: 0;
+}

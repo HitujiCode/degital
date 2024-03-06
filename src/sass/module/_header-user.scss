@@ -8,6 +8,7 @@
   left: rem(12);
   right: rem(12);
   padding: rem(11) rem(10) rem(12);
+  z-index: 999;
 }
 
 .header__inner {
@@ -19,6 +20,8 @@
   position: absolute;
   top: rem(-2);
   left: 0;
+  display: flex;
+  gap: rem(12);
 }
 
 .header__name {
@@ -67,4 +70,9 @@
 .header--test .header__wrap {
   position: initial;
   display: inline-block;
+}
+
+.header--delta {
+  @extend .header;
+  padding: rem(11) rem(15) rem(12);
 }

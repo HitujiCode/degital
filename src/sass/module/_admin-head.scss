@@ -1,0 +1,58 @@
+@use "global" as *;
+
+.admin-head {
+  display: flex;
+  gap: rem(16);
+}
+
+.admin-head__grade,
+.admin-head__subject,
+.admin-head__class {
+  width: 100%;
+  background-color: $white;
+  border: 1px solid $lightgray;
+  border-radius: rem(5);
+  position: relative;
+}
+
+.admin-head__grade::after,
+.admin-head__subject::after,
+.admin-head__class::after {
+  content: "";
+  position: absolute;
+  top: 52%;
+  transform: translateY(-50%);
+  right: rem(12);
+  width: rem(16);
+  height: rem(10);
+  background-color: $black;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+.admin-head__grade select,
+.admin-head__subject select,
+.admin-head__class select {
+  width: 100%;
+  font-size: rem(16);
+  font-weight: $bold;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  padding: rem(9) rem(32) rem(9) rem(12);
+}
+
+.admin-head__grade {
+  max-width: rem(100);
+}
+
+.admin-head__subject {
+  max-width: rem(140);
+}
+
+.admin-head__class {
+  max-width: rem(140);
+}
+
+.admin-head__button {
+  max-width: rem(120);
+  width: 100%;
+}
