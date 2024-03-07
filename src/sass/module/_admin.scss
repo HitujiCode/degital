@@ -24,6 +24,7 @@
   padding-left: calc(180 / 1000 * 100%);
   max-height: calc(655 / 768 * 100vh);
   min-height: inherit;
+  overflow: clip;
 }
 
 .admin__news {
@@ -36,6 +37,7 @@
 .admin__content {
   margin-top: rem(16);
   max-height: calc(434 / 768 * 100vh);
+  padding-bottom: rem(70);
 }
 
 .admin__tab {

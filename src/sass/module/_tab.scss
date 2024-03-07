@@ -1,6 +1,7 @@
 @use "global" as *;
 
 .tab {
+  // padding-bottom: rem(42);
 }
 
 .tab__menu {
@@ -46,7 +47,7 @@
 
 .tab__content {
   display: none;
-  padding: rem(18) rem(21) rem(62);
+  padding: rem(18) rem(20) rem(62);
   background-color: $white;
 }
 

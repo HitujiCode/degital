@@ -13,7 +13,7 @@
   line-height: 1;
   text-align: center;
   background-color: $white;
-  padding: rem(9) rem(15) rem(7);
+  padding: rem(9) rem(12) rem(7) rem(14);
 }
 
 .user-data th {
@@ -26,7 +26,8 @@
 .user-data td {
   font-weight: $regular;
   text-align: left;
-  width: calc(180 / 578 * 100%);
+  width: rem(180);
+  letter-spacing: 0.05em;
 }
 
 .user-data__scores {
