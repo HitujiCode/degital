@@ -1,0 +1,92 @@
+@use "global" as *;
+
+.user-score7 {
+  border-collapse: separate;
+  border-spacing: 0 1px;
+  width: auto;
+  white-space: nowrap;
+}
+
+.user-score7 th,
+.user-score7 td {
+  border: 1px solid $lightblue2;
+  font-size: rem(14);
+  line-height: 1;
+  letter-spacing: 0.05em;
+  height: rem(32);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.user-score7__head {
+  width: rem(178);
+  background-color: $lightblue;
+  position: sticky;
+  left: 0;
+}
+
+.user-score7 tbody .user-score7__head,
+.user-score7 tfoot .user-score7__head {
+  justify-content: start;
+  padding: 0 rem(9);
+}
+
+.user-score7 tbody .user-score7__head {
+  background-color: $white;
+  justify-content: start;
+}
+
+.user-score7 thead .user-score7__num {
+  font-size: rem(18);
+  font-weight: $medium;
+}
+
+.user-score7 tfoot .user-score7__num {
+  background-color: $white;
+  font-size: rem(12);
+}
+
+.user-score7 tfoot .user-score7__num.is-active {
+  background-color: $blue;
+  color: $white;
+}
+
+.user-score7__num {
+  margin-left: -1px;
+  width: rem(32);
+  background-color: $lightblue4;
+  font-size: rem(18);
+  font-weight: $medium;
+  font-family: $second-font-family;
+  letter-spacing: 0;
+}
+
+.user-score7 tbody .user-score7__num {
+  background-color: $white;
+}
+
+.user-score7 th:nth-child(n + 2):nth-child(-n + 11) {
+  background-color: $skyblue2;
+}
+
+.user-score7__total {
+  margin-left: -1px;
+  width: rem(104);
+}
+
+.user-score7 thead .user-score7__total {
+  background-color: $lightblue;
+  letter-spacing: 0;
+}
+
+.user-score7--nolink {
+  @extend .user-score7;
+}
+
+.user-score7--nolink tbody td.user-score7__num {
+  font-weight: $bold;
+  font-family: $base-font-family;
+  letter-spacing: 0.05em;
+}

@@ -3,6 +3,7 @@
 .unit {
   height: 100%;
   padding-bottom: rem(24);
+  overflow-y: auto;
 }
 
 .unit__inner {

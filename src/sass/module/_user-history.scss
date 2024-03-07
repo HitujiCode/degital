@@ -1,0 +1,124 @@
+@use "global" as *;
+
+.user-history {
+  white-space: nowrap;
+  min-width: max-content;
+}
+
+.user-history__head {
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 150;
+}
+
+.user-history__head .user-history__cell1,
+.user-history__head .user-history__cell2 {
+  background-color: $lightblue;
+}
+
+.user-history__head .user-history__cell3 {
+  background-color: $lightblue4;
+}
+
+.user-history__head .user-history__cell4 {
+  background-color: $lightblue7;
+}
+
+.user-history__body {
+  margin-top: 1px;
+  background-color: $white;
+}
+
+%cell {
+  border: 1px solid $lightblue2;
+  font-size: rem(14);
+  font-weight: $bold;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  height: rem(31);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-history__cell1:first-child,
+.user-history__cell1-left {
+  @extend %cell;
+  width: rem(152);
+  height: inherit;
+  position: sticky;
+  left: 0;
+  z-index: 100;
+}
+
+.user-history__cell1:first-child {
+  @extend %cell;
+  // width: rem(152);
+}
+
+.user-history__cell1-left {
+  justify-content: start;
+  padding: 0 rem(9);
+  background-color: $white;
+}
+
+.user-history__cell2,
+.user-history__cell3,
+.user-history__cell3-large,
+.user-history__cell4 {
+  @extend %cell;
+  margin-left: -1px;
+}
+
+.user-history__cell2 {
+  width: rem(100);
+}
+
+.user-history__body .user-history__cell2 {
+  font-size: rem(12);
+}
+
+.user-history__cell3 {
+  width: rem(38);
+  font-size: rem(16);
+  font-weight: $medium;
+  font-family: $second-font-family;
+  letter-spacing: 0;
+}
+
+.user-history__cell3-large {
+  width: rem(75);
+  font-size: rem(16);
+  font-weight: $medium;
+  font-family: $second-font-family;
+  letter-spacing: 0;
+}
+
+.user-history__cell4 {
+  width: rem(75);
+}
+
+.user-history__tr {
+  display: flex;
+}
+
+.user-history__name {
+}
+
+.user-history__wrap {
+}
+
+.user-history__first,
+.user-history__second {
+  display: flex;
+}
+
+.user-history__second {
+  margin-top: -1px;
+}
+
+.user-history__subject {
+  display: flex;
+}

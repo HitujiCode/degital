@@ -47,3 +47,15 @@
 .accracy-button__suffix {
   font-size: rem(12);
 }
+
+.accracy-button.is-active,
+.accracy-button--blue.is-active {
+  background-color: rgba($active, 0.3);
+  border: 1px solid $active2;
+}
+
+.accracy-button--blue {
+  @extend .accracy-button;
+  color: $blue;
+  letter-spacing: 0;
+}

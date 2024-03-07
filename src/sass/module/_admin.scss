@@ -41,3 +41,27 @@
 .admin__tab {
   min-height: calc(100vh - 174px);
 }
+
+.admin--history {
+  @extend .admin;
+}
+
+.admin--history .admin__container {
+  display: grid;
+  grid-template-rows: fit-content(100%) 1fr;
+}
+
+.admin--history .admin__head {
+  margin-top: 0;
+}
+
+.admin--history .admin__content {
+  overflow: auto;
+  scrollbar-width: none;
+  height: 100%;
+  min-height: inherit;
+}
+
+.admin--history .admin__content::-webkit-scrollbar {
+  display: none;
+}
