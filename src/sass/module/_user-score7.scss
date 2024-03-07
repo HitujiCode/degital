@@ -7,6 +7,10 @@
   white-space: nowrap;
 }
 
+.user-score7 tr {
+  display: flex;
+}
+
 .user-score7 th,
 .user-score7 td {
   border: 1px solid $lightblue2;
