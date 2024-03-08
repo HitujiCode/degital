@@ -11,6 +11,7 @@
   font-weight: $bold;
   line-height: 1;
   letter-spacing: 0.05em;
+  // position: relative;
 }
 
 .accracy-button img {
@@ -51,7 +52,7 @@
 .accracy-button.is-active,
 .accracy-button--blue.is-active {
   background-color: rgba($active, 0.3);
-  border: 1px solid $active2;
+  border: 2px solid $active2;
 }
 
 .accracy-button--blue {
